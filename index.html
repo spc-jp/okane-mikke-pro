@@ -35,7 +35,6 @@
     min-height: 100vh;
   }
 
-  /* ヘッダー */
   .header {
     background: var(--teal-dark);
     padding: 1.25rem 1.5rem;
@@ -74,7 +73,6 @@
     letter-spacing: 0.03em;
   }
 
-  /* ステッパー */
   .stepper {
     background: var(--teal-mid);
     padding: 1rem 1.5rem;
@@ -136,14 +134,12 @@
     flex-shrink: 0;
   }
 
-  /* メインコンテナ */
   .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 1.5rem 1rem 3rem;
   }
 
-  /* スクリーン制御 */
   .screen { display: none; }
   .screen.active { display: block; animation: fadeIn 0.4s ease; }
 
@@ -152,7 +148,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 
-  /* イントロカード */
   .intro-card {
     background: var(--white);
     border-radius: 16px;
@@ -191,7 +186,6 @@
     line-height: 1.7;
   }
 
-  /* フォームセクション */
   .form-section {
     background: var(--white);
     border-radius: 16px;
@@ -219,7 +213,6 @@
     border-radius: 2px;
   }
 
-  /* 選択ボタングループ */
   .btn-group {
     display: flex;
     flex-wrap: wrap;
@@ -239,10 +232,7 @@
     line-height: 1;
   }
 
-  .btn-select:hover {
-    border-color: var(--teal-main);
-    color: var(--teal-mid);
-  }
+  .btn-select:hover { border-color: var(--teal-main); color: var(--teal-mid); }
 
   .btn-select.selected {
     background: var(--teal-main);
@@ -251,7 +241,6 @@
     font-weight: 700;
   }
 
-  /* チェックボックスグループ */
   .check-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -270,15 +259,8 @@
     background: var(--white);
   }
 
-  .check-item:hover {
-    border-color: var(--teal-main);
-    background: var(--teal-pale);
-  }
-
-  .check-item.selected {
-    border-color: var(--teal-main);
-    background: var(--teal-pale);
-  }
+  .check-item:hover { border-color: var(--teal-main); background: var(--teal-pale); }
+  .check-item.selected { border-color: var(--teal-main); background: var(--teal-pale); }
 
   .check-item input[type="checkbox"] {
     width: 16px;
@@ -287,18 +269,9 @@
     flex-shrink: 0;
   }
 
-  .check-item span {
-    font-size: 13px;
-    color: var(--gray-dark);
-    line-height: 1.3;
-  }
+  .check-item span { font-size: 13px; color: var(--gray-dark); line-height: 1.3; }
+  .check-item.selected span { color: var(--teal-dark); font-weight: 500; }
 
-  .check-item.selected span {
-    color: var(--teal-dark);
-    font-weight: 500;
-  }
-
-  /* 実行ボタン */
   .btn-primary {
     width: 100%;
     padding: 1rem;
@@ -319,11 +292,7 @@
   .btn-primary:active { transform: translateY(0); }
   .btn-primary:disabled { background: var(--gray-light); cursor: not-allowed; transform: none; }
 
-  /* ローディング */
-  .loading-wrap {
-    text-align: center;
-    padding: 3rem 1.5rem;
-  }
+  .loading-wrap { text-align: center; padding: 3rem 1.5rem; }
 
   .loading-animation {
     display: flex;
@@ -348,20 +317,9 @@
     40% { transform: scale(1.1); opacity: 1; }
   }
 
-  .loading-wrap h2 {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 18px;
-    color: var(--teal-dark);
-    margin-bottom: 0.5rem;
-  }
+  .loading-wrap h2 { font-family: 'Noto Serif JP', serif; font-size: 18px; color: var(--teal-dark); margin-bottom: 0.5rem; }
+  .loading-wrap p { font-size: 13px; color: var(--gray-mid); line-height: 1.7; }
 
-  .loading-wrap p {
-    font-size: 13px;
-    color: var(--gray-mid);
-    line-height: 1.7;
-  }
-
-  /* 結果エリア */
   .result-header {
     background: var(--teal-dark);
     border-radius: 16px;
@@ -384,18 +342,8 @@
     flex-shrink: 0;
   }
 
-  .result-header-text h2 {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 16px;
-    color: var(--white);
-    line-height: 1.5;
-    margin-bottom: 0.25rem;
-  }
-
-  .result-header-text p {
-    font-size: 12px;
-    color: var(--teal-light);
-  }
+  .result-header-text h2 { font-family: 'Noto Serif JP', serif; font-size: 16px; color: var(--white); line-height: 1.5; margin-bottom: 0.25rem; }
+  .result-header-text p { font-size: 12px; color: var(--teal-light); }
 
   .result-block {
     background: var(--white);
@@ -422,27 +370,11 @@
     letter-spacing: 0.02em;
   }
 
-  .badge-now {
-    background: #FCEBEB;
-    color: #A32D2D;
-  }
+  .badge-now { background: #FCEBEB; color: #A32D2D; }
+  .badge-year { background: var(--amber-pale); color: var(--amber-dark); }
+  .badge-future { background: var(--teal-pale); color: var(--teal-dark); }
+  .result-block-title span { font-size: 13px; color: var(--gray-mid); }
 
-  .badge-year {
-    background: var(--amber-pale);
-    color: var(--amber-dark);
-  }
-
-  .badge-future {
-    background: var(--teal-pale);
-    color: var(--teal-dark);
-  }
-
-  .result-block-title span {
-    font-size: 13px;
-    color: var(--gray-mid);
-  }
-
-  /* チェックリストアイテム */
   .checklist-item {
     display: flex;
     align-items: flex-start;
@@ -467,22 +399,10 @@
     transition: all 0.2s;
   }
 
-  .checklist-item.checked .check-circle {
-    background: var(--teal-main);
-    border-color: var(--teal-main);
-  }
-
-  .check-circle svg {
-    display: none;
-  }
-
-  .checklist-item.checked .check-circle svg {
-    display: block;
-  }
-
-  .checklist-item-text {
-    flex: 1;
-  }
+  .checklist-item.checked .check-circle { background: var(--teal-main); border-color: var(--teal-main); }
+  .check-circle svg { display: none; }
+  .checklist-item.checked .check-circle svg { display: block; }
+  .checklist-item-text { flex: 1; }
 
   .checklist-item-text strong {
     display: block;
@@ -494,18 +414,9 @@
     transition: color 0.2s;
   }
 
-  .checklist-item.checked .checklist-item-text strong {
-    color: var(--gray-light);
-    text-decoration: line-through;
-  }
+  .checklist-item.checked .checklist-item-text strong { color: var(--gray-light); text-decoration: line-through; }
+  .checklist-item-text small { font-size: 12px; color: var(--gray-mid); line-height: 1.6; }
 
-  .checklist-item-text small {
-    font-size: 12px;
-    color: var(--gray-mid);
-    line-height: 1.6;
-  }
-
-  /* アドバイスボックス */
   .advice-box {
     background: var(--amber-pale);
     border-radius: 16px;
@@ -524,13 +435,26 @@
     gap: 0.4rem;
   }
 
-  .advice-box p {
-    font-size: 14px;
-    color: var(--amber-dark);
-    line-height: 1.8;
-  }
+  .advice-box p { font-size: 14px; color: var(--amber-dark); line-height: 1.8; }
 
-  /* CTAカード */
+  /* コピーボタン */
+  .btn-copy {
+    width: 100%;
+    padding: 0.85rem;
+    background: var(--white);
+    color: var(--teal-mid);
+    border: 2px solid var(--teal-main);
+    border-radius: 12px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s;
+  }
+  .btn-copy:hover { background: var(--teal-pale); }
+  .btn-copy.copied { background: var(--teal-main); color: var(--white); border-color: var(--teal-main); }
+
   .cta-card {
     background: var(--teal-dark);
     border-radius: 16px;
@@ -539,19 +463,8 @@
     margin-bottom: 1rem;
   }
 
-  .cta-card h3 {
-    font-family: 'Noto Serif JP', serif;
-    font-size: 16px;
-    color: var(--white);
-    margin-bottom: 0.5rem;
-  }
-
-  .cta-card p {
-    font-size: 12px;
-    color: var(--teal-light);
-    line-height: 1.7;
-    margin-bottom: 1rem;
-  }
+  .cta-card h3 { font-family: 'Noto Serif JP', serif; font-size: 16px; color: var(--white); margin-bottom: 0.5rem; }
+  .cta-card p { font-size: 12px; color: var(--teal-light); line-height: 1.7; margin-bottom: 1rem; }
 
   .btn-cta {
     display: inline-block;
@@ -587,7 +500,6 @@
 
   .btn-retry:hover { background: var(--teal-pale); }
 
-  /* エラー */
   .error-box {
     background: #FCEBEB;
     border-radius: 12px;
@@ -599,15 +511,8 @@
     line-height: 1.7;
   }
 
-  /* フッター */
-  .footer {
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 11px;
-    color: var(--gray-light);
-  }
+  .footer { text-align: center; padding: 1.5rem; font-size: 11px; color: var(--gray-light); }
 
-  /* レスポンシブ */
   @media (max-width: 400px) {
     .check-group { grid-template-columns: 1fr; }
     .header-text h1 { font-size: 17px; }
@@ -752,6 +657,10 @@
 
     <div id="result-content"></div>
 
+    <button class="btn-copy" id="btn-copy" onclick="copyChecklist()">
+      📋 チェックリストをコピーする
+    </button>
+
     <div class="cta-card">
       <h3>もっと詳しく相談したいですか？</h3>
       <p>税理士・FP・お金の専門家への相談は、<br>早ければ早いほど選択肢が広がります。</p>
@@ -771,11 +680,10 @@
 </div>
 
 <script>
-  const WORKERS_URL = 'YOUR_CLOUDFLARE_WORKERS_URL_HERE';
+  const WORKERS_URL = 'https://okane-mikke-pro.yymmatsu.workers.dev';
 
   const state = { age: '', family: '', house: '', concerns: [] };
 
-  // 単一選択
   document.querySelectorAll('.btn-group').forEach(group => {
     group.querySelectorAll('.btn-select').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -789,7 +697,6 @@
     });
   });
 
-  // チェックボックス
   document.querySelectorAll('#group-concerns .check-item').forEach(item => {
     item.addEventListener('click', () => {
       item.classList.toggle('selected');
@@ -893,7 +800,6 @@
       state.age + '・' + state.family + '・' + state.house;
 
     let html = '';
-
     html += buildBlock('今すぐやること', data.now || [], 'now');
     html += buildBlock('1年以内にやること', data.year || [], 'year');
     html += buildBlock('将来的に考えること', data.future || [], 'future');
@@ -909,9 +815,7 @@
     document.getElementById('result-error').style.display = 'none';
 
     document.querySelectorAll('.checklist-item').forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('checked');
-      });
+      item.addEventListener('click', () => { item.classList.toggle('checked'); });
     });
 
     setStep(3);
@@ -941,6 +845,40 @@
       </div>
       ${rows}
     </div>`;
+  }
+
+  function copyChecklist() {
+    const items = document.querySelectorAll('.checklist-item');
+    let text = 'お金みっけ チェックリスト\n';
+    text += state.age + '・' + state.family + '・' + state.house + '\n\n';
+
+    let currentBlock = '';
+    items.forEach(item => {
+      const block = item.closest('.result-block');
+      const blockTitle = block.querySelector('.badge').textContent;
+      if (blockTitle !== currentBlock) {
+        currentBlock = blockTitle;
+        text += '【' + blockTitle + '】\n';
+      }
+      const title = item.querySelector('strong').textContent;
+      const detail = item.querySelector('small').textContent;
+      text += '□ ' + title + '\n  ' + detail + '\n';
+    });
+
+    const advice = document.querySelector('.advice-box p');
+    if (advice) {
+      text += '\n💡 アドバイス\n' + advice.textContent;
+    }
+
+    navigator.clipboard.writeText(text).then(() => {
+      const btn = document.getElementById('btn-copy');
+      btn.textContent = '✅ コピーしました！';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = '📋 チェックリストをコピーする';
+        btn.classList.remove('copied');
+      }, 2000);
+    });
   }
 
   function resetApp() {
